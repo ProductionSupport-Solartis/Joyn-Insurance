@@ -33,7 +33,7 @@ paths:
           required: true
           type: string
           format: string
-          default: "DeclineQuote_1.1.0.1"
+          default: "DeclineQuote_1.0.0.1"
         - name: OwnerId
           in: header
           description: Owner ID of the Product
@@ -41,9 +41,9 @@ paths:
           type: string
           format: string
           default: "4042"
-        - name: MODE
+        - name: Mode
           in: header
-          description: MODE of the product
+          description: Mode of the product
           required: true
           type: string
           format: string
@@ -108,6 +108,12 @@ definitions:
           LanguageCode:
             type: string
             default: "en"
+      EventName:
+        type: string
+        default: "DeclineQuote_1.0.0.1"
+      OwnerId:
+        type: string
+        default: "4042"
       Quote:
         type: object
         properties:
@@ -147,6 +153,10 @@ definitions:
           RegionCode:
             type: string
             default: "US"
+      EventName:
+        type: string
+      OwnerId:
+        type: string
       Quote:
         type: object
         properties:
@@ -184,4 +194,3 @@ definitions:
                 type: array
                 items:
                   type: string       
-
