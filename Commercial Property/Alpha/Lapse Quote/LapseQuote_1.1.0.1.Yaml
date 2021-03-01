@@ -1,1 +1,196 @@
+swagger: '2.0'
+info:
+  version: "1.0.0"
+  title: Solartis lapse Quote API for Joyn Insurance 
+  description: To lapse Quote for the given inputs
+  
+host: joynwfcfuci.solartis.net
+basePath: /KnowledgeEngineV6_9/KnowledgeBase
+schemes:
+  - https
+consumes:
+  - application/json
+produces:
+  - application/json
+paths:
+  /FireEventV3:
+    post:
+      description: To lapse quote for the given input
+      operationId: lapsequote
+      produces:
+        - application/json
+      parameters:
+        - name: Token
+          in: header
+          description: Authentication Token
+          required: true
+          type: string
+          format: string
+          default: "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"
+        - name: EventName
+          in: header
+          description: Name of the event to be invoked
+          required: true
+          type: string
+          format: string
+          default: "LapseQuote_1.0.0.1"
+        - name: OwnerId
+          in: header
+          description: Owner ID of the Product
+          required: true
+          type: string
+          format: string
+          default: "4042"
+        - name: Mode
+          in: header
+          description: Mode of the product
+          required: true
+          type: string
+          format: string
+          default: "DEV"
+        - name: Environment
+          in: header
+          description: Environment in which the event to be invoked
+          required: true
+          type: string
+          format: string
+          default: "15"
+        - name: LapseQuote
+          in: body
+          description: Account details
+          required: true
+          schema:
+            $ref: '#/definitions/LapseQuote_Request'
+      responses:
+        '200':
+          description: Success Response
+          schema:
+            $ref: '#/definitions/LapseQuote_Success_Response'
+        default:
+          description: unexpected error
+          schema:
+            $ref: '#/definitions/errorModel'
 
+definitions:
+  LapseQuote_Request:
+    type: object
+    required:
+      - ServiceRequestDetail
+    properties:
+      ServiceRequestDetail:
+        type: object
+        properties:
+          OwnerId:
+            type: string
+            default: "4042"
+          ResponseType:
+            type: string
+            enum: ["JSON","XML"]
+            default: "JSON"
+          EndClientUserUniqueSessionId:
+            type: string
+            default: "1.0"
+          UserName:
+            type: string
+            default: "Udayakumar"
+          Token:
+            type: string
+            default: "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"
+          ServiceRequestVersion:
+            type: string
+            default: "1.0"
+          ServiceResponseVersion:
+            type: string
+            default: "1.0"
+          RegionCode:
+            type: string
+            default: "US"
+          LanguageCode:
+            type: string
+            default: "en"
+      EventName:
+        type: string
+        default: "LapseQuote_1.0.0.1"
+      OwnerId:
+        type: string
+        default: "4042"
+      Quote:
+        type: object
+        properties:
+            QuoteNumber: 
+              type: string
+              default: "Q00-0000001-00"
+            LapseReason: 
+              type: string
+              default: "Quote is in-progress status for 30 days"
+  LapseQuote_Success_Response:
+    type: object
+    required:
+      - ServiceRequestDetail
+    properties:
+      ServiceRequestDetail:
+        type: object
+        properties:
+          ResponseType:
+            type: string
+            enum: ["JSON","XML"]
+            default: "JSON"
+          OwnerId:
+            type: string
+            default: "2282"
+          EndClientUserUniqueSessionId:
+            type: string
+            default: "1.0"
+          UserName:
+            type: string
+            default: "udayakumar"
+          Token:
+            type: string
+            default: "F8nZyN0ndRGRZHgZkyXowDqHlpYVMg1iC/2bRIGf80MXhrh3Ucj08r4rsjBKtVfypTx9ugddNGo9tzdbiNctfqrqAUtHNLkYLTu2V3SEK5ncZjJZk90jmKW4J3T7O/EOyZgAmPcb/r1YUqxsFfxQFw5vE6VcCSB4nRyV3wY6Ra3xY6GAoMTBy/Jb9MORWDyHiT2MIlwVWrhGL4rOaGUptFiIvxj2SPtX/uSaBdTKoooQC8RViOYBcRabimW6EwXbN7W4yfuF2tdCh9gsYIz3YikKRCFlLu8hz5VzX3BgDvwUPzEyhqrYLjaC5bO5vv46Ljw3JzTIEoyABPiYSGRy5/jbGXnBN6xpHnAJoy9y5+htO65vcfElzduQiTqQyp+dusaFktLR0PMuq7FQCq/0G2F/LvaE7p6ZhBnkPwf8v+E1DMqkAwup7CAYPN/2Oac8ruuP8ZuCe3YrajQom0ECyPzP29ZcmJQhG1AmwTB5Jq5bulWbpGTnZiZpf3sOVT07iN+fd7T3gxh1DaUfhnRiJbH6t0FaMQUrGWDd1m5nopv1Za3ZD7MZYQSHvUJHO6gM6StSW+OqkyXMUNBBnhhHZBbZ6/WIq/RQxv5sNEcRbbauh/q5O7QPPEsCeauxj5TV"
+          ServiceRequestVersion:
+            type: string
+            default: "1.0"
+          RegionCode:
+            type: string
+            default: "US"
+      EventName:
+        type: string
+      OwnerId:
+        type: string
+      Quote:
+        type: object
+        properties:
+            QuoteNumber: 
+              type: string
+            LapseReason: 
+              type: string
+            QuoteStatus:
+               type: string
+  errorModel:
+    type: object
+    required:
+      - RequestStatus
+      - MessageDetail
+    properties:
+      RequestStatus:
+        type: string
+      MessageDetail:
+        type: object
+        properties:
+          MessageCode:
+            type: string
+          MessageType:
+            type: string
+          UserMessage:
+            type: string
+          MessageLevel:
+            type: string
+          MessageSeverity:
+            type: string
+          MessageList:
+            type: object
+            properties:
+              Message:
+                type: array
+                items:
+                  type: string       
