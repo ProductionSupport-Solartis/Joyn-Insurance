@@ -119,7 +119,7 @@ definitions:
         default: "Q00-0000001-00"
       DeclineReason: 
         type: string
-        default: "Underwriting rules failed"
+        default: "Ineligible Quote"
   DeclineQuote_Success_Response:
     type: object
     required:
