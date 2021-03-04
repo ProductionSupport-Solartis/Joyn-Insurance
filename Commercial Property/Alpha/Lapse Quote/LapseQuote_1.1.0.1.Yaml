@@ -114,15 +114,12 @@ definitions:
       OwnerId:
         type: string
         default: "4042"
-      Quote:
-        type: object
-        properties:
-            QuoteNumber: 
-              type: string
-              default: "Q00-0000001-00"
-            LapseReason: 
-              type: string
-              default: "Quote is in-progress status for 30 days"
+      QuoteNumber: 
+        type: string
+        default: "Q00-0000001-00"
+      LapseReason: 
+        type: string
+        default: "Quote Lost"
   LapseQuote_Success_Response:
     type: object
     required:
@@ -157,15 +154,12 @@ definitions:
         type: string
       OwnerId:
         type: string
-      Quote:
-        type: object
-        properties:
-            QuoteNumber: 
-              type: string
-            LapseReason: 
-              type: string
-            QuoteStatus:
-               type: string
+      QuoteNumber: 
+        type: string
+      LapseReason: 
+        type: string
+      QuoteStatus:
+         type: string
   errorModel:
     type: object
     required:
