@@ -108,7 +108,7 @@ definitions:
           LanguageCode:
             type: string
             default: "en"
-      SparkSubmissionNumber:
+      SubmissionNumber:
         type: string
         default: "S-000000000"
       ReceivedDate:
@@ -126,7 +126,7 @@ definitions:
       Underwriter:
         type: object
         properties:
-            UnderwriterUsersId: 
+            UnderwriterId: 
               type: string
               default: "123456"
             UnderwriterName: 
@@ -135,10 +135,10 @@ definitions:
             UnderwriterEmail: 
               type: string
               default: "udayakumar_k@solartis.com"
-      OperationsUser:
+      Operations:
           type: object
           properties:
-            OpsusersId: 
+            OpsId: 
               type: string
               default: "12345"
             OpsName: 
@@ -282,7 +282,7 @@ definitions:
             default: "US"
       SolartisSubmissionNumber:
         type: string
-      SparkSubmissionNumber:
+      SubmissionNumber:
         type: string
       ReceivedDate:
         type: string
@@ -295,16 +295,16 @@ definitions:
       Underwriter:
         type: object
         properties:
-            UnderwriterUsersId: 
+            UnderwriterId: 
               type: string
             UnderwriterName: 
               type: string
             UnderwriterEmail: 
               type: string
-      OperationsUser:
+      Operations:
           type: object
           properties:
-            OpsusersId: 
+            OpsId: 
               type: string
             OpsName: 
               type: string
