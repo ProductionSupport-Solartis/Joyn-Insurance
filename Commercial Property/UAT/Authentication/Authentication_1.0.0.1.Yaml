@@ -1,7 +1,7 @@
 swagger: '2.0'
 info:
   version: "1.0.0"
-  title: HYLA Authentication Service
+  title: Joyn Authentication Service for Commercial Property
   description: To get token from Authentication Service
   
   
@@ -79,10 +79,10 @@ definitions:
         properties:
           UserName: 
             type: string
-            default: "hylasystemadmin"
+            default: ""
           Password:
             type: string
-            default: "hylaadmin*1"
+            default: ""
             
   Authenication_Success_Response:
     type: object
