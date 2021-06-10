@@ -14,7 +14,7 @@ consumes:
 produces:
   - application/json
 paths: 
-  /requestServiceV2:
+  /requestService:
     post:
       description: Authentication Service
       operationId: getToken
@@ -79,10 +79,10 @@ definitions:
         properties:
           UserName: 
             type: string
-            default: "Joyn Underwriter"
+            default: "Joyn_Admin"
           Password:
             type: string
-            default: "welcome1"
+            default: "sKVSbX7wj8UYYAaar4amxQ=="
             
   Authenication_Success_Response:
     type: object
